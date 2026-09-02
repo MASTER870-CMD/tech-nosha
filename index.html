@@ -1815,6 +1815,48 @@
       grid-template-columns: 1fr 1fr !important;
     }
 
+    /* Tablet (max-width: 768px) */
+    @media (max-width: 768px) {
+      .hero-inner {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .hero-visual,
+      .hero-premium-image {
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        margin: 32px auto 0 auto;
+      }
+    }
+
+    /* Mobile Phones (max-width: 425px) */
+    @media (max-width: 425px) {
+      .hero-inner {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .hero-visual,
+      .hero-premium-image {
+        margin-top: 24px;
+      }
+    }
+
+    /* Extra small screens (down to 311px) */
+    @media (max-width: 311px) {
+      .hero-inner {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+    }
+
     .footer-brand-logo {
       height: 72px;
       margin-bottom: 24px;
