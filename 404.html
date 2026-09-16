@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Technoksha</title>
+  <link rel="icon" type="image/png" href="/assets/cropped-favicon-270x270.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text: #141e32; /* Deep navy */
+      --text-soft: #59626F;
+      --bg: #F6F8FB;
+      --cyan: #00a0dc;
+      --orange: #f37021;
+      --font-head: 'Manrope', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --radius: 16px;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      color: var(--text-soft);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Background decorative blobs */
+    body::before,
+    body::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: 0;
+    }
+
+    body::before {
+      width: 400px;
+      height: 400px;
+      background: rgba(0, 160, 220, 0.15); /* Cyan tint */
+      top: -100px;
+      left: -100px;
+    }
+
+    body::after {
+      width: 500px;
+      height: 500px;
+      background: rgba(243, 112, 33, 0.1); /* Orange tint */
+      bottom: -150px;
+      right: -150px;
+    }
+
+    .glass-card {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: var(--radius);
+      padding: 60px 40px;
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 24px 48px -12px rgba(20, 30, 50, 0.1);
+    }
+
+    .logo {
+      width: 200px;
+      margin: 0 auto 40px auto;
+      display: block;
+    }
+
+    h1 {
+      font-family: var(--font-head);
+      color: var(--text);
+      font-size: 32px;
+      margin: 0 0 16px 0;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 0 32px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(243, 112, 33, 0.3);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(243, 112, 33, 0.4);
+      background: #e06318;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glass-card">
+    <img src="/assets/Technoksha Logo.png" alt="Technoksha Logo" class="logo">
+    <h1>Looks like we're still drafting this blueprint!</h1>
+    <p>We are building something new here. Let's get you back to the main engineering floor.</p>
+    <a href="/" class="btn">Return to Homepage</a>
+  </div>
+
+</body>
+</html>
