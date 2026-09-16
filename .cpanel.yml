@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/jseicmgu/technoksha.com/
+    - /bin/cp -R * $DEPLOYPATH

@@ -1,21 +1,13 @@
 RewriteEngine On
 RewriteBase /
-
-# 1. Redirect index.html directly to the root (/)
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html [NC]
 RewriteRule ^index\.html$ / [R=301,L]
-
-# 2. Redirect any other .html file to a trailing slash URL (/page/)
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^ ]+)\.html [NC]
 RewriteRule ^(.*)\.html$ /$1/ [R=301,L]
-
-# 3. Add a trailing slash if someone types /page without it
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{DOCUMENT_ROOT}/$1.html -f
 RewriteRule ^(.*[^/])$ /$1/ [R=301,L]
-
-# 4. Internally serve the .html file when /page/ is requested
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)/$ $1.html [L]
