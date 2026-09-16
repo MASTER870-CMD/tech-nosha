@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -40,9 +40,7 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html, body { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
 
     body {
       margin: 0;
@@ -1061,11 +1059,7 @@
     }
 
     /* FOOTER */
-    footer {
-      background: var(--bg-soft-2);
-      border-top: 1px solid var(--border);
-      padding: 52px 0 24px;
-    }
+    footer { background: var(--bg-soft); padding: 80px 0 32px; margin-top: auto; border-top: none; }
 
     .foot-grid {
       display: grid;
@@ -1625,7 +1619,7 @@
       transition: transform 0.3s ease;
     }
     .mobile-accordion-toggle.active::after {
-      content: '−';
+      content: '-';
     }
     .mobile-accordion-content {
       max-height: 0;
@@ -1671,10 +1665,10 @@
         <li><a href="./industries.html">Industries</a></li>
         <li><a href="./insights.html">Insights</a></li>
         
-        <li><a href="./index.html#contact">Contact</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
       <div style="display:flex; align-items:center; gap:22px;">
-        <a href="./index.html#contact" class="btn btn-primary nav-cta desktop-only">Free Demo Slots</a>
+        <a href="./contact.html" class="btn btn-primary nav-cta desktop-only">Free Demo Slots</a>
         <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu"
           aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
@@ -1707,8 +1701,8 @@
     <a href="./about.html" class="mobile-link" onclick="closeMenu()">Who We Are</a>
     <a href="./industries.html" class="mobile-link" onclick="closeMenu()">Industries</a>
       <a href="./insights.html" class="mobile-link" onclick="closeMenu()">Insights</a>
-    <a href="./index.html#contact" class="mobile-link" onclick="closeMenu()">Contact</a>
-    <a href="./index.html#contact" class="btn btn-primary" style="margin-top: 16px;">Free Demo Slots</a onclick="closeMenu()">
+    <a href="./contact.html" class="mobile-link" onclick="closeMenu()">Contact</a>
+    <a href="./contact.html" class="btn btn-primary" style="margin-top: 16px;">Free Demo Slots</a onclick="closeMenu()">
   </div>
   <header class="hero" id="top">
     <div class="container hero-inner">
@@ -1718,7 +1712,7 @@
         <p class="hero-sub">Explore our comprehensive range of CAD, CAM, rendering, and workstation solutions designed to elevate your engineering capabilities.</p>
         <span class="urgency-pill">⚡ Free demo slots — limited slots this month</span>
         <div class="hero-actions">
-          <a href="./index.html#contact" class="btn btn-primary">Free Demo Slots</a onclick="closeMenu()">
+          <a href="./contact.html" class="btn btn-primary">Free Demo Slots</a onclick="closeMenu()">
           <a href="tel:+917996279164" class="btn btn-outline">Call +91 93808 25216</a>
         </div>
         <div class="callback-mini">
@@ -1841,7 +1835,7 @@
       transition: transform 0.3s ease;
     }
     .mobile-accordion-toggle.active::after {
-      content: '−';
+      content: '-';
     }
     .mobile-accordion-content {
       max-height: 0;
@@ -1903,7 +1897,7 @@ footer a:hover {
             <li>3D Surface Modelling</li>
             <li>Tooling and Fixture Design</li>
           </ul>
-          <a href="./index.html#contact" class="learn">Request quote →</a>
+          <a href="./contact.html" class="learn">Request quote →</a>
         </div>
         <!-- 2. VISI -->
         <div class="sol-card" style="--i:1">
@@ -1920,7 +1914,7 @@ footer a:hover {
             <li>Collision Detection & Simulation</li>
             <li>Automatic Feature Recognition</li>
           </ul>
-          <a href="./index.html#contact" class="learn">Request quote →</a>
+          <a href="./contact.html" class="learn">Request quote →</a>
         </div>
         <!-- 3. ZWSOFT ZWCAD Standard -->
         <div class="sol-card" style="--i:2">
@@ -1933,7 +1927,7 @@ footer a:hover {
             <li>2D drafting tools</li>
             <li>LISP Routines</li>
           </ul>
-          <a href="./index.html#contact" class="learn">Request quote →</a>
+          <a href="./contact.html" class="learn">Request quote →</a>
         </div>
         <!-- 4. ZWSOFT ZWCAD Professional -->
         <div class="sol-card" style="--i:3">
@@ -1948,7 +1942,7 @@ footer a:hover {
             <li>Raster to Vector Conversion</li>
             <li>Full API capabilities</li>
           </ul>
-          <a href="./index.html#contact" class="learn">Request quote →</a>
+          <a href="./contact.html" class="learn">Request quote →</a>
         </div>
         <!-- 5. ZWSOFT ZWCAD MFG -->
         <div class="sol-card" style="--i:4">
@@ -1964,7 +1958,7 @@ footer a:hover {
             <li>Mechanical drawing, annotation, calculation tools</li>
             <li>Power Dimension</li>
           </ul>
-          <a href="./index.html#contact" class="learn">Request quote →</a>
+          <a href="./contact.html" class="learn">Request quote →</a>
         </div>
         <!-- 6. KeyShot Studio -->
         <div class="sol-card" style="--i:5">
@@ -1979,7 +1973,7 @@ footer a:hover {
             <li>Exploded Views (Precise, assembly-aware)</li>
             <li>Web & Marketing (Export to GLB, USD, interactive 3D)</li>
           </ul>
-          <a href="./index.html#contact" class="learn">Request quote →</a>
+          <a href="./contact.html" class="learn">Request quote →</a>
         </div>
         <!-- 7. AutoCAD -->
         <div class="sol-card" style="--i:6">
@@ -1993,7 +1987,7 @@ footer a:hover {
             <li>Common in engineering, architecture, construction</li>
             <li>Helps create precise and accurate technical drawings</li>
           </ul>
-          <a href="./index.html#contact" class="learn">Request quote →</a>
+          <a href="./contact.html" class="learn">Request quote →</a>
         </div>
         <!-- 8. Tungsten Power PDF -->
         <div class="sol-card" style="--i:7">
@@ -2008,7 +2002,7 @@ footer a:hover {
             <li>Editions for Enterprises, professional teams, individuals</li>
             <li>Scanned document processing with OCR</li>
           </ul>
-          <a href="./index.html#contact" class="learn">Request quote →</a>
+          <a href="./contact.html" class="learn">Request quote →</a>
         </div>
         <!-- 9. Workstations -->
         <div class="sol-card" style="--i:8">
@@ -2023,7 +2017,7 @@ footer a:hover {
             <li>Reliable & Durable (ECC memory, SSD storage)</li>
             <li>Portable (Laptops) & Tower Workstations</li>
           </ul>
-          <a href="./index.html#contact" class="learn">Request quote →</a>
+          <a href="./contact.html" class="learn">Request quote →</a>
         </div>
       </div>
     </div>
@@ -2034,7 +2028,7 @@ footer a:hover {
         <h2>Transform Your Design Process Today.</h2>
         <p>Limited implementation slots available.</p>
       </div>
-      <a href="./index.html#contact" class="btn btn-white reveal">Talk to Us</a>
+      <a href="./contact.html" class="btn btn-white reveal">Talk to Us</a>
     </div>
   </section>
 
@@ -2070,16 +2064,16 @@ footer a:hover {
           <h5>Products</h5>
           <ul>
             <li><a href="./workstations.html">Workstations</a></li>
-            <li><a href="./index.html#contact">HP</a></li>
-            <li><a href="./index.html#contact">Dell</a></li>
+            <li><a href="./contact.html">HP</a></li>
+            <li><a href="./contact.html">Dell</a></li>
           </ul>
         </div>
         <div class="foot-col">
           <h5>RESOURCE CENTER</h5>
           <ul>
-            <li><a href="./index.html#contact">Enquiry</a></li>
-            <li><a href="./index.html#contact">Support</a></li>
-            <li><a href="./index.html#contact">Contact Us</a></li>
+            <li><a href="./contact.html">Enquiry</a></li>
+            <li><a href="./contact.html">Support</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
           </ul>
           <div class="foot-social" style="margin-top: 24px;">
             <a href="https://www.linkedin.com/company/technoksha" aria-label="LinkedIn" class="social-li" target="_blank"

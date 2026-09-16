@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,7 @@
             --font-head: 'Manrope', sans-serif; --font-body: 'Inter', sans-serif;
             --container: 1180px; --nav-h: 96px;
         }
+        *, *::before, *::after { box-sizing: border-box; }
         body { margin: 0; font-family: var(--font-body); color: var(--text-soft); background: var(--bg); -webkit-font-smoothing: antialiased; display: flex; flex-direction: column; min-height: 100vh;}
         a { text-decoration: none; color: inherit; }
         .container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 24px; }
@@ -41,9 +42,10 @@
         .hamburger.open span:nth-child(1) { top: 10px; transform: rotate(45deg); }
         .hamburger.open span:nth-child(2) { opacity: 0; }
         .hamburger.open span:nth-child(3) { top: 10px; transform: rotate(-45deg); }
-        .mobile-panel { position: fixed; inset: 0; z-index: 999; background: #fff; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; padding: 100px 40px 40px; gap: 32px; overflow-y: auto; transform: translateY(-100%); transition: transform .4s cubic-bezier(.4, 0, .2, 1); }
+        .mobile-panel { position: fixed; inset: 0; z-index: 999; background: #fff; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; padding: 96px 20px 20px; gap: 12px; overflow-y: auto; transform: translateY(-100%); transition: transform .4s cubic-bezier(.4, 0, .2, 1); }
         .mobile-panel.open { transform: translateY(0); }
-        .mobile-panel a.mobile-link { font-family: var(--font-head); font-size: 20px; font-weight: 800; color: var(--text); transition: color .2s ease; }
+        @media (max-height: 650px) { .mobile-panel { padding-top: 76px !important; padding-bottom: 16px !important; gap: 8px !important; } .mobile-panel a.mobile-link, .mobile-accordion-toggle { font-size: 16px !important; } .btn-primary { padding: 10px 20px !important; margin-top: 4px !important; } }
+        .mobile-panel a.mobile-link { font-family: var(--font-head); font-size: 18px; font-weight: 800; color: var(--text); transition: color .2s ease; }
         .mobile-panel a.mobile-link:hover { color: var(--blue); }
         body.menu-open { overflow: hidden; }
         @media (max-width:900px) { .nav-links { display: none; } .nav-cta.desktop-only { display: none; } .hamburger { display: block; } }
@@ -53,11 +55,11 @@
         .nav-dropdown-menu a { display: block; padding: 10px 20px; font-size: 14px; color: var(--text-soft); transition: background 0.2s, color 0.2s; }
         .nav-dropdown-menu a:hover { background: var(--bg-soft); color: var(--blue); }
         .nav-dropdown-menu a::after { display: none; }
-        .mobile-accordion-toggle { width: 100%; text-align: left; font-family: var(--font-head); font-size: 20px; font-weight: 800; color: var(--text); background: none; border: none; padding: 0; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+        .mobile-accordion-toggle { width: 100%; text-align: left; font-family: var(--font-head); font-size: 18px; font-weight: 800; color: var(--text); background: none; border: none; padding: 0; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
         .mobile-accordion-toggle::after { content: '+'; font-size: 26px; font-weight: 400; transition: transform 0.3s ease; }
-        .mobile-accordion-toggle.active::after { content: '−'; }
+        .mobile-accordion-toggle.active::after { content: '-'; }
         .mobile-accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
-        .mobile-accordion-inner { display: flex; flex-direction: column; gap: 20px; padding-top: 20px; padding-left: 16px; }
+        .mobile-accordion-inner { display: flex; flex-direction: column; gap: 14px; padding-top: 14px; padding-left: 16px; }
         ul { list-style: none; margin: 0; padding: 0; }
         /* --- END INJECTED NAVBAR CSS --- */
 
@@ -80,8 +82,15 @@
         
         .loader { text-align: center; padding: 40px; font-weight: 600; grid-column: 1 / -1; }
 
+        .cta-band { background: var(--blue); padding: 56px 0; }
+        .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
+        .cta-inner h2 { color: #fff; font-size: clamp(1.35rem, 1vw + 1.2rem, 1.9rem); max-width: 24ch; font-family: var(--font-head); font-weight: 800; margin: 0; }
+        .cta-inner p { color: rgba(255, 255, 255, .85); font-size: 15px; margin-top: 8px; margin-bottom: 0; }
+        .btn-white { background: #fff; color: var(--blue-dark); border-color: #fff; }
+        .btn-white:hover { background: #F2F6FF; transform: translateY(-2px); border-color: #F2F6FF; }
+
         /* Exact Footer Integration */
-        footer { background: #FFFFFF; border-top: 1px solid #E5E9EE; padding: 60px 0 24px; margin-top: auto;}
+        footer { background: var(--bg-soft); padding: 80px 0 32px; margin-top: auto; border-top: none; }
         .foot-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 48px; }
         @media(max-width: 900px) { .foot-grid { grid-template-columns: repeat(2, 1fr); } .foot-contact { grid-column: 1 / -1; } }
         @media(max-width: 500px) { .foot-grid { grid-template-columns: 1fr; } }
@@ -129,10 +138,10 @@
                 <li><a href="./about.html">Who We Are</a></li>
                 <li><a href="./index.html#industries">Industries</a></li>
                 <li><a href="./insights.html">Insights</a></li>
-                <li><a href="./index.html#contact">Contact</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
             <div style="display:flex; align-items:center; gap:22px;">
-                <a href="./index.html#contact" class="btn btn-primary nav-cta desktop-only">Free Demo Slots</a>
+                <a href="./contact.html" class="btn btn-primary nav-cta desktop-only">Free Demo Slots</a>
                 <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
             </div>
         </div>
@@ -161,8 +170,8 @@
         <a href="./about.html" class="mobile-link" onclick="closeMenu()">Who We Are</a>
         <a href="./index.html#industries" class="mobile-link" onclick="closeMenu()">Industries</a>
         <a href="./insights.html" class="mobile-link" onclick="closeMenu()">Insights</a>
-        <a href="./index.html#contact" class="mobile-link" onclick="closeMenu()">Contact</a>
-        <a href="./index.html#contact" class="btn btn-primary" style="margin-top: 16px;" onclick="closeMenu()">Free Demo Slots</a>
+        <a href="./contact.html" class="mobile-link" onclick="closeMenu()">Contact</a>
+        <a href="./contact.html" class="btn btn-primary" style="margin-top: 16px;" onclick="closeMenu()">Free Demo Slots</a>
     </div>
 
     <div class="hero-banner">
@@ -177,6 +186,16 @@
             <div class="loader" style="font-size: 24px; font-weight: 700; color: var(--text);">Coming soon.</div>
         </div>
     </main>
+
+    <section class="cta-band">
+        <div class="container cta-inner">
+            <div class="reveal is-visible">
+                <h2>Transform Your Design Process Today.</h2>
+                <p>Limited implementation slots available.</p>
+            </div>
+            <a href="./contact.html" class="btn btn-white reveal is-visible">Talk to Us</a>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
@@ -208,16 +227,16 @@
           <h5>Products</h5>
           <ul>
             <li><a href="./workstations.html">Workstations</a></li>
-            <li><a href="./index.html#contact">HP</a></li>
-            <li><a href="./index.html#contact">Dell</a></li>
+            <li><a href="./contact.html">HP</a></li>
+            <li><a href="./contact.html">Dell</a></li>
           </ul>
         </div>
             <div class="foot-col">
           <h5>RESOURCE CENTER</h5>
           <ul>
-            <li><a href="./index.html#contact">Enquiry</a></li>
-            <li><a href="./index.html#contact">Support</a></li>
-            <li><a href="./index.html#contact">Contact Us</a></li>
+            <li><a href="./contact.html">Enquiry</a></li>
+            <li><a href="./contact.html">Support</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
           </ul>
               <div class="foot-social" style="margin-top: 24px;">
             <svg width="0" height="0" style="position:absolute; width:0; height:0;">

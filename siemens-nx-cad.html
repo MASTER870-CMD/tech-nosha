@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -41,9 +41,7 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html, body { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
 
     body {
       margin: 0;
@@ -1086,11 +1084,7 @@
     }
 
     /* FOOTER */
-    footer {
-      background: var(--bg-soft-2);
-      border-top: 1px solid var(--border);
-      padding: 52px 0 24px;
-    }
+    footer { background: var(--bg-soft); padding: 80px 0 32px; margin-top: auto; border-top: none; }
 
     .foot-grid {
       display: grid;
@@ -2394,7 +2388,7 @@
       transition: transform 0.3s ease;
     }
     .mobile-accordion-toggle.active::after {
-      content: '−';
+      content: '-';
     }
     .mobile-accordion-content {
       max-height: 0;
@@ -2440,10 +2434,10 @@
         <li><a href="./industries.html">Industries</a></li>
         <li><a href="./insights.html">Insights</a></li>
         
-        <li><a href="./index.html#contact">Contact</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
       <div style="display:flex; align-items:center; gap:22px;">
-        <a href="./index.html#contact" class="btn btn-primary nav-cta desktop-only">Free Demo Slots</a>
+        <a href="./contact.html" class="btn btn-primary nav-cta desktop-only">Free Demo Slots</a>
         <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu"
           aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
@@ -2476,8 +2470,8 @@
     <a href="./about.html" class="mobile-link" onclick="closeMenu()">Who We Are</a>
     <a href="./industries.html" class="mobile-link" onclick="closeMenu()">Industries</a>
       <a href="./insights.html" class="mobile-link" onclick="closeMenu()">Insights</a>
-    <a href="./index.html#contact" class="mobile-link" onclick="closeMenu()">Contact</a>
-    <a href="./index.html#contact" class="btn btn-primary" style="margin-top: 16px;">Free Demo Slots</a onclick="closeMenu()">
+    <a href="./contact.html" class="mobile-link" onclick="closeMenu()">Contact</a>
+    <a href="./contact.html" class="btn btn-primary" style="margin-top: 16px;">Free Demo Slots</a onclick="closeMenu()">
   </div>
 
   <header class="hero prod-hero" id="top">
@@ -2493,7 +2487,7 @@
           India.</p>
         <div class="hero-actions">
           <a href="#packages" class="btn btn-primary">Compare Packages</a>
-          <a href="./index.html#contact" class="btn btn-outline">Get a Quote</a>
+          <a href="./contact.html" class="btn btn-outline">Get a Quote</a>
         </div>
         <div class="trust-strip" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px 20px; margin-top: 0;">
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" /></svg>Powerful 3D Modeling</span>
@@ -2730,7 +2724,7 @@
         </table>
       </div>
       <p class="about-lead reveal" style="margin-top:16px;"><strong>Not sure which package you need? </strong><a
-          href="./index.html#contact" style="color:var(--blue); font-weight:700;">Talk to a Technoksha NX CAD specialist →</a></p>
+          href="./contact.html" style="color:var(--blue); font-weight:700;">Talk to a Technoksha NX CAD specialist →</a></p>
     </div>
   </section>
 
@@ -2947,7 +2941,7 @@
       transition: transform 0.3s ease;
     }
     .mobile-accordion-toggle.active::after {
-      content: '−';
+      content: '-';
     }
     .mobile-accordion-content {
       max-height: 0;
@@ -3061,7 +3055,7 @@ footer a:hover {
         <h2>Transform Your Design Process Today.</h2>
         <p>Limited implementation slots available.</p>
       </div>
-      <a href="./index.html#contact" class="btn btn-white reveal">Talk to Us</a>
+      <a href="./contact.html" class="btn btn-white reveal">Talk to Us</a>
     </div>
   </section>
 
@@ -3097,16 +3091,16 @@ footer a:hover {
           <h5>Products</h5>
           <ul>
             <li><a href="./workstations.html">Workstations</a></li>
-            <li><a href="./index.html#contact">HP</a></li>
-            <li><a href="./index.html#contact">Dell</a></li>
+            <li><a href="./contact.html">HP</a></li>
+            <li><a href="./contact.html">Dell</a></li>
           </ul>
         </div>
         <div class="foot-col">
           <h5>RESOURCE CENTER</h5>
           <ul>
-            <li><a href="./index.html#contact">Enquiry</a></li>
-            <li><a href="./index.html#contact">Support</a></li>
-            <li><a href="./index.html#contact">Contact Us</a></li>
+            <li><a href="./contact.html">Enquiry</a></li>
+            <li><a href="./contact.html">Support</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
           </ul>
           <div class="foot-social" style="margin-top: 24px;">
             <a href="https://www.linkedin.com/company/technoksha" aria-label="LinkedIn" class="social-li" target="_blank"

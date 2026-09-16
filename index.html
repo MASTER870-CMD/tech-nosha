@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -40,9 +40,7 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html, body { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
 
     body {
       margin: 0;
@@ -1072,6 +1070,14 @@
       .contact-form {
         padding: 24px 20px;
       }
+      
+      .highlight-logo img {
+        max-width: 90px !important;
+        margin: 0 auto;
+      }
+      .highlight-logo {
+        width: auto !important;
+      }
     }
 
     /* CTA */
@@ -1701,7 +1707,7 @@
     }
 
     .mobile-accordion-toggle.active::after {
-      content: '−';
+      content: '-';
     }
 
     .mobile-accordion-content {
@@ -1748,10 +1754,10 @@
         <li><a href="./industries.html">Industries</a></li>
         <li><a href="./insights.html">Insights</a></li>
 
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
       <div style="display:flex; align-items:center; gap:22px;">
-        <a href="./index.html#contact" class="btn btn-primary nav-cta desktop-only">Free Demo Slots</a>
+        <a href="./contact.html" class="btn btn-primary nav-cta desktop-only">Free Demo Slots</a>
         <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu"
           aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
@@ -1790,7 +1796,7 @@
     <a href="./about.html" class="mobile-link" onclick="closeMenu()">Who We Are</a>
     <a href="./industries.html" class="mobile-link" onclick="closeMenu()">Industries</a>
     <a href="./insights.html" class="mobile-link" onclick="closeMenu()">Insights</a>
-    <a href="./index.html#contact" class="mobile-link" onclick="closeMenu()">Contact</a>
+    <a href="./contact.html" class="mobile-link" onclick="closeMenu()">Contact</a>
     <a href="#contact" class="btn btn-primary" style="margin-top: 16px;">Free Demo Slots</a onclick="closeMenu()">
   </div>
   <style>
@@ -1943,7 +1949,7 @@
     }
 
     .mobile-accordion-toggle.active::after {
-      content: '−';
+      content: '-';
     }
 
     .mobile-accordion-content {
@@ -1969,7 +1975,7 @@
         <span class="eyebrow">Engineering Technology Partner · Bengaluru</span>
         <h1>Your Partner <span>in Design</span></h1>
         <p class="hero-sub">ZWCAD solutions, Siemens NX CAD, and Hexagon Manufacturing Intelligence—from
-          Bengaluru’s premier engineering software experts.</p>
+          Bengaluru's premier engineering software experts.</p>
         <span class="urgency-pill">⚡ Live Software Demo — Reserve your priority slot today</span>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">Free Demo Slots</a onclick="closeMenu()">
@@ -2154,7 +2160,7 @@
         }
 
         .mobile-accordion-toggle.active::after {
-          content: '−';
+          content: '-';
         }
 
         .mobile-accordion-content {
@@ -2174,7 +2180,7 @@
     
 </style>
       <div class="why-grid reveal-stagger reveal"
-        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px; text-align: center;">
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; text-align: center;">
 
         <div class="why-card">
           <div class="why-icon" style="margin-bottom: 24px; color: var(--blue);">
@@ -2393,7 +2399,7 @@
         }
 
         .mobile-accordion-toggle.active::after {
-          content: '−';
+          content: '-';
         }
 
         .mobile-accordion-content {
@@ -2419,9 +2425,8 @@
         <div class="client-card"><img src="./assets/patners/JK MAINI.png" alt="JK MAINI"></div>
         <div class="client-card"><img src="./assets/patners/nidec.png" alt="Nidec" style="max-width: 90%; max-height: 80px;"></div>
         <div class="client-card"><img src="./assets/patners/jk.png" alt="JK Maini Logo"></div>
-        <div class="client-card highlight-logo"><img src="https://assets.molex.com/is/content/molex/Molex_Logo_Red-3"
-            alt="molex"
-            style="max-width: 120px; max-height: 40px; object-fit: contain; margin: 0 auto; display: block;"></div>
+        <div class="client-card"><img src="https://assets.molex.com/is/content/molex/Molex_Logo_Red-3"
+            alt="molex" style="max-width: 60%; max-height: 35px; object-fit: contain; margin: 0 auto; display: block;"></div>
         <div class="client-card"><img src="./assets/patners/miju.png" alt="Miju Precision Logo"></div>
       </div>
     </div>
@@ -2712,7 +2717,7 @@
         }
 
         .mobile-accordion-toggle.active::after {
-          content: '−';
+          content: '-';
         }
 
         .mobile-accordion-content {
@@ -2807,7 +2812,7 @@ footer a:hover {
         <h2>Transform Your Design Process Today.</h2>
         <p>Limited implementation slots available.</p>
       </div>
-      <a href="./index.html#contact" class="btn btn-white reveal">Talk to Us</a>
+      <a href="./contact.html" class="btn btn-white reveal">Talk to Us</a>
     </div>
   </section>
 
@@ -2844,16 +2849,16 @@ footer a:hover {
           <h5>Products</h5>
           <ul>
             <li><a href="./workstations.html">Workstations</a></li>
-            <li><a href="./index.html#contact">HP</a></li>
-            <li><a href="./index.html#contact">Dell</a></li>
+            <li><a href="./contact.html">HP</a></li>
+            <li><a href="./contact.html">Dell</a></li>
           </ul>
         </div>
         <div class="foot-col">
           <h5>RESOURCE CENTER</h5>
           <ul>
-            <li><a href="./index.html#contact">Enquiry</a></li>
-            <li><a href="./index.html#contact">Support</a></li>
-            <li><a href="./index.html#contact">Contact Us</a></li>
+            <li><a href="./contact.html">Enquiry</a></li>
+            <li><a href="./contact.html">Support</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
           </ul>
           <div class="foot-social" style="margin-top: 24px;">
             <svg width="0" height="0" style="position:absolute; width:0; height:0;">

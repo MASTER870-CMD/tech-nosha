@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -40,9 +40,7 @@
       box-sizing: border-box;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html, body { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
 
     body {
       margin: 0;
@@ -1090,11 +1088,7 @@
     }
 
     /* FOOTER */
-    footer {
-      background: var(--bg-soft-2);
-      border-top: 1px solid var(--border);
-      padding: 52px 0 24px;
-    }
+    footer { background: var(--bg-soft); padding: 80px 0 32px; margin-top: auto; border-top: none; }
 
     .foot-grid {
       display: grid;
@@ -1724,7 +1718,7 @@
     }
 
     .mobile-accordion-toggle.active::after {
-      content: '−';
+      content: '-';
     }
 
     .mobile-accordion-content {
@@ -1800,10 +1794,10 @@ footer a:hover {
         <li><a href="./industries.html" class="active">Industries</a></li>
         <li><a href="./insights.html">Insights</a></li>
 
-        <li><a href="./index.html#contact">Contact</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
       <div style="display:flex; align-items:center; gap:22px;">
-        <a href="./index.html#contact" class="btn btn-primary nav-cta desktop-only">Free Demo Slots</a>
+        <a href="./contact.html" class="btn btn-primary nav-cta desktop-only">Free Demo Slots</a>
         <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu"
           aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
@@ -1837,8 +1831,8 @@ footer a:hover {
     <a href="./about.html" class="mobile-link" onclick="closeMenu()">Who We Are</a>
     <a href="./industries.html" class="mobile-link active" onclick="closeMenu()">Industries</a>
     <a href="./insights.html" class="mobile-link" onclick="closeMenu()">Insights</a>
-    <a href="./index.html#contact" class="mobile-link" onclick="closeMenu()">Contact</a>
-    <a href="./index.html#contact" class="btn btn-primary" style="margin-top: 16px;">Free Demo Slots</a onclick="closeMenu()">
+    <a href="./contact.html" class="mobile-link" onclick="closeMenu()">Contact</a>
+    <a href="./contact.html" class="btn btn-primary" style="margin-top: 16px;">Free Demo Slots</a onclick="closeMenu()">
   </div>
   <header class="page-hero">
     <div class="container">
@@ -1860,7 +1854,7 @@ footer a:hover {
           <h3>Aerospace &amp; Defense</h3>
           <p>Precision CAD tools and certified workstations for complex assembly design and tight-tolerance
             manufacturing.</p>
-          <a href="./index.html#contact" class="learn">Learn more &rarr;</a>
+          <a href="./contact.html" class="learn">Learn more &rarr;</a>
         </div>
         <div class="sol-card" style="--i:1">
           <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
@@ -1872,7 +1866,7 @@ footer a:hover {
           <h3>Automotive &amp; Transportation</h3>
           <p>Accelerate vehicle design and tooling with ZWSOFT ZWCAD, Hexagon CAM solutions and certified workstations.
           </p>
-          <a href="./index.html#contact" class="learn">Learn more &rarr;</a>
+          <a href="./contact.html" class="learn">Learn more &rarr;</a>
         </div>
         <div class="sol-card" style="--i:2">
           <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
@@ -1882,7 +1876,7 @@ footer a:hover {
             </svg></div>
           <h3>Industrial Equipment</h3>
           <p>Streamline heavy machinery and equipment design with robust 3D modeling and mold &amp; tool solutions.</p>
-          <a href="./index.html#contact" class="learn">Learn more &rarr;</a>
+          <a href="./contact.html" class="learn">Learn more &rarr;</a>
         </div>
         <div class="sol-card" style="--i:3">
           <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
@@ -1893,7 +1887,7 @@ footer a:hover {
             </svg></div>
           <h3>Consumer Products</h3>
           <p>Bring products to market faster with 3D modeling, KeyShot rendering and visualization tools.</p>
-          <a href="./index.html#contact" class="learn">Learn more &rarr;</a>
+          <a href="./contact.html" class="learn">Learn more &rarr;</a>
         </div>
         <div class="sol-card" style="--i:4">
           <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
@@ -1901,7 +1895,7 @@ footer a:hover {
             </svg></div>
           <h3>Medical Devices</h3>
           <p>Design with the precision, documentation and control that medical device manufacturing demands.</p>
-          <a href="./index.html#contact" class="learn">Learn more &rarr;</a>
+          <a href="./contact.html" class="learn">Learn more &rarr;</a>
         </div>
         <div class="sol-card" style="--i:5">
           <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
@@ -1911,7 +1905,7 @@ footer a:hover {
           <h3>Manufacturing</h3>
           <p>Optimize your shop floor with Hexagon's WorkNC and VISI toolpath and manufacturing intelligence software.
           </p>
-          <a href="./index.html#contact" class="learn">Learn more &rarr;</a>
+          <a href="./contact.html" class="learn">Learn more &rarr;</a>
         </div>
         <div class="sol-card" style="--i:6">
           <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
@@ -1922,7 +1916,7 @@ footer a:hover {
             </svg></div>
           <h3>Mold &amp; Tool Design</h3>
           <p>Specialized tools for mold and tool designers to reduce lead times and improve quality.</p>
-          <a href="./index.html#contact" class="learn">Learn more &rarr;</a>
+          <a href="./contact.html" class="learn">Learn more &rarr;</a>
         </div>
         <div class="sol-card" style="--i:7">
           <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
@@ -1932,7 +1926,7 @@ footer a:hover {
             </svg></div>
           <h3>Sheet Metal</h3>
           <p>Design and manufacture sheet metal fabrication with purpose-built tools.</p>
-          <a href="./index.html#contact" class="learn">Learn more &rarr;</a>
+          <a href="./contact.html" class="learn">Learn more &rarr;</a>
         </div>
         <div class="sol-card" style="--i:8">
           <div class="sol-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
@@ -1945,7 +1939,7 @@ footer a:hover {
           <h3>Jewellery Design</h3>
           <p>Create intricate, high-precision 3D models and CAD designs for luxury jewellery manufacturing with advanced
             drafting and rendering tools.</p>
-          <a href="./index.html#contact" class="learn">Learn more &rarr;</a>
+          <a href="./contact.html" class="learn">Learn more &rarr;</a>
         </div>
       </div>
     </div>
@@ -1957,7 +1951,7 @@ footer a:hover {
         <h2>Don't see your industry listed?</h2>
         <p>Talk to us — chances are we've already solved a similar workflow.</p>
       </div>
-      <a href="./index.html#contact" class="btn btn-white reveal">Talk to Us</a>
+      <a href="./contact.html" class="btn btn-white reveal">Talk to Us</a>
     </div>
   </section>
 
@@ -1994,16 +1988,16 @@ footer a:hover {
           <h5>Products</h5>
           <ul>
             <li><a href="./workstations.html">Workstations</a></li>
-            <li><a href="./index.html#contact">HP</a></li>
-            <li><a href="./index.html#contact">Dell</a></li>
+            <li><a href="./contact.html">HP</a></li>
+            <li><a href="./contact.html">Dell</a></li>
           </ul>
         </div>
         <div class="foot-col">
           <h5>RESOURCE CENTER</h5>
           <ul>
-            <li><a href="./index.html#contact">Enquiry</a></li>
-            <li><a href="./index.html#contact">Support</a></li>
-            <li><a href="./index.html#contact">Contact Us</a></li>
+            <li><a href="./contact.html">Enquiry</a></li>
+            <li><a href="./contact.html">Support</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
           </ul>
           <div class="foot-social" style="margin-top: 24px;">
             <a href="https://www.linkedin.com/company/technoksha" aria-label="LinkedIn" class="social-li"
